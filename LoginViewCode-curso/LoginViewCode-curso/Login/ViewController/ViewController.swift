@@ -18,7 +18,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .blue
     }
  
     override func viewWillAppear(_ animated: Bool) {
