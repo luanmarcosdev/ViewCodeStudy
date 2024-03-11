@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     var loginScreen: LoginScreen?
     
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITextFieldDelegate {
+extension LoginViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField.placeholder == "Digite seu e-mail"{
@@ -41,13 +41,15 @@ extension ViewController: UITextFieldDelegate {
     
 }
 
-extension ViewController: LoginScreenProtocol {
+extension LoginViewController: LoginScreenProtocol {
     func actionLoginButton() {
         print("login vc")
     }
     
     func actionRegisterButton() {
         print("register vc")
+        let vc = RegisterViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
