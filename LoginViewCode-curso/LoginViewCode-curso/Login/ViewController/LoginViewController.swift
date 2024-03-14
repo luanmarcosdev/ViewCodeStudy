@@ -30,12 +30,16 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: UITextFieldDelegate {
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField.placeholder == "Digite seu e-mail"{
-            textField.resignFirstResponder()
+    private func configTextFiedl(tf: UITextField){
+        if tf.placeholder == "Digite seu e-mail"{
+            tf.resignFirstResponder()
             loginScreen?.passwordTextField.becomeFirstResponder()
         }
-        textField.resignFirstResponder()
+        tf.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.configTextFiedl(tf: textField)
         return true
     }
     

@@ -13,6 +13,8 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        registerScreen?.configTextFieldDelegate(delegate: self)
+        registerScreen?.delegate(delegate: self)
     }
     
     override func loadView() {
@@ -20,4 +22,32 @@ class RegisterViewController: UIViewController {
         self.view = self.registerScreen
     }
 
+}
+
+extension RegisterViewController: UITextFieldDelegate {
+    
+    private func configTextFiedl(tf: UITextField){
+        if tf.placeholder == "Digite seu e-mail"{
+            tf.resignFirstResponder()
+            registerScreen?.passwordTextField.becomeFirstResponder()
+        }
+        tf.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.configTextFiedl(tf: textField)
+        return true
+    }
+}
+
+extension RegisterViewController: RegisterScreenProtocol {
+    func actionBackButton() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    func actionRegisterButton() {
+        print("registrar protocol")
+    }
+    
+    
 }
