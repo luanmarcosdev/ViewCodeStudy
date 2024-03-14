@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		799C28E9FB82E137CD886AE3 /* Pods_LoginViewCode_curso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 348D3822633D1085B6514EEC /* Pods_LoginViewCode_curso.framework */; };
 		CA5B969D2B98D036005B5983 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5B969C2B98D036005B5983 /* LoginScreen.swift */; };
 		CA72521A2B974FB8001ADCCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7252192B974FB8001ADCCE /* AppDelegate.swift */; };
 		CA72521C2B974FB8001ADCCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72521B2B974FB8001ADCCE /* SceneDelegate.swift */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1653E1787FDB3F7D15A51196 /* Pods-LoginViewCode-curso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewCode-curso.release.xcconfig"; path = "Target Support Files/Pods-LoginViewCode-curso/Pods-LoginViewCode-curso.release.xcconfig"; sourceTree = "<group>"; };
+		348D3822633D1085B6514EEC /* Pods_LoginViewCode_curso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginViewCode_curso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B54DCEA528965939844452C9 /* Pods-LoginViewCode-curso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewCode-curso.debug.xcconfig"; path = "Target Support Files/Pods-LoginViewCode-curso/Pods-LoginViewCode-curso.debug.xcconfig"; sourceTree = "<group>"; };
 		CA5B969C2B98D036005B5983 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		CA7252162B974FB8001ADCCE /* LoginViewCode-curso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoginViewCode-curso.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7252192B974FB8001ADCCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,12 +39,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				799C28E9FB82E137CD886AE3 /* Pods_LoginViewCode_curso.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E9A8BDFC30FB232939B7D92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B54DCEA528965939844452C9 /* Pods-LoginViewCode-curso.debug.xcconfig */,
+				1653E1787FDB3F7D15A51196 /* Pods-LoginViewCode-curso.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CA5B96992B98CF1C005B5983 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +85,8 @@
 			children = (
 				CA7252182B974FB8001ADCCE /* LoginViewCode-curso */,
 				CA7252172B974FB8001ADCCE /* Products */,
+				4E9A8BDFC30FB232939B7D92 /* Pods */,
+				CB0B8E9847B0328CC6DC542F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +137,14 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		CB0B8E9847B0328CC6DC542F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				348D3822633D1085B6514EEC /* Pods_LoginViewCode_curso.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA72522A2B974FBA001ADCCE /* Build configuration list for PBXNativeTarget "LoginViewCode-curso" */;
 			buildPhases = (
+				4A2FE9BED2DC271E43A2241B /* [CP] Check Pods Manifest.lock */,
 				CA7252122B974FB8001ADCCE /* Sources */,
 				CA7252132B974FB8001ADCCE /* Frameworks */,
 				CA7252142B974FB8001ADCCE /* Resources */,
+				9266D41823759FAEC512C29A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +211,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A2FE9BED2DC271E43A2241B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginViewCode-curso-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9266D41823759FAEC512C29A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginViewCode-curso/Pods-LoginViewCode-curso-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginViewCode-curso/Pods-LoginViewCode-curso-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginViewCode-curso/Pods-LoginViewCode-curso-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA7252122B974FB8001ADCCE /* Sources */ = {
@@ -335,12 +403,14 @@
 		};
 		CA72522B2B974FBA001ADCCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B54DCEA528965939844452C9 /* Pods-LoginViewCode-curso.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PVS74PN984;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "LoginViewCode-curso/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -363,12 +433,14 @@
 		};
 		CA72522C2B974FBA001ADCCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1653E1787FDB3F7D15A51196 /* Pods-LoginViewCode-curso.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PVS74PN984;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "LoginViewCode-curso/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
