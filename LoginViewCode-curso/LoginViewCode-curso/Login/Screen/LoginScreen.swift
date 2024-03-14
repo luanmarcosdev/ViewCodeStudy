@@ -90,7 +90,6 @@ class LoginScreen: UIView {
         super.init(frame: frame)
         self.configBackground()
         self.configSuperView()
-        // constraints snapkit
         self.configLoginLabelConstraint()
         self.configLogoAppImageViewConstraint()
         self.configEmailTextFieldConstraint()
@@ -165,14 +164,14 @@ class LoginScreen: UIView {
 //        ])
 //    }
     
-    func configLoginLabelConstraint(){
+    private func configLoginLabelConstraint(){
         self.loginLabel.snp.makeConstraints { make in
             make.top.equalTo(self.safeAreaLayoutGuide.snp.top).offset(20)
             make.centerX.equalToSuperview()
         }
     }
     
-    func configLogoAppImageViewConstraint(){
+    private func configLogoAppImageViewConstraint(){
         self.logoAppImageView.snp.makeConstraints { make in
             make.top.equalTo(self.loginLabel.snp.bottom).offset(20)
             make.leading.equalToSuperview().offset(60)
@@ -181,7 +180,7 @@ class LoginScreen: UIView {
         }
     }
     
-    func configEmailTextFieldConstraint(){
+    private func configEmailTextFieldConstraint(){
         self.emailTextField.snp.makeConstraints { make in
             make.top.equalTo(self.logoAppImageView.snp.bottom).offset(20)
             make.leading.equalToSuperview().offset(20)
@@ -190,7 +189,7 @@ class LoginScreen: UIView {
         }
     }
     
-    func configPasswordTextFieldConstraint(){
+    private func configPasswordTextFieldConstraint(){
         self.passwordTextField.snp.makeConstraints { make in
             make.top.equalTo(self.emailTextField.snp.bottom).offset(15)
             make.leading.equalTo(self.emailTextField.snp.leading)
@@ -199,7 +198,7 @@ class LoginScreen: UIView {
         }
     }
     
-    func configLoginButtonConstraint(){
+    private func configLoginButtonConstraint(){
         self.loginButton.snp.makeConstraints { make in
             make.top.equalTo(self.passwordTextField.snp.bottom).offset(15)
             make.leading.equalTo(self.emailTextField.snp.leading)
@@ -208,7 +207,7 @@ class LoginScreen: UIView {
         }
     }
     
-    func configRegisterButtonConstraint(){
+    private func configRegisterButtonConstraint(){
         self.registerButton.snp.makeConstraints { make in
             make.top.equalTo(self.loginButton.snp.bottom).offset(15)
             make.leading.equalTo(self.emailTextField.snp.leading)
