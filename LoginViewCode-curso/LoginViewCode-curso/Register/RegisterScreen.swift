@@ -94,6 +94,35 @@ class RegisterScreen: UIView {
         self.backgroundColor = UIColor(red: 24/255, green: 117/255, blue: 104/255, alpha: 1.0)
     }
     
+    public func validateTextFields() {
+        let email: String = self.emailTextField.text ?? ""
+        let password: String = self.passwordTextField.text ?? ""
+        
+        if !email.isEmpty && !password.isEmpty {
+            self.configButtonEnable(true)
+        } else {
+            self.configButtonEnable(false)
+        }
+    }
+    
+    private func configButtonEnable(_ enable: Bool) {
+        if enable {
+            self.registerButton.setTitleColor(.white, for: .normal)
+            self.registerButton.isEnabled = true
+        } else {
+            self.registerButton.setTitleColor(.lightGray, for: .normal)
+            self.registerButton.isEnabled = false
+        }
+    }
+    
+    public func getEmail() -> String {
+        return self.emailTextField.text ?? ""
+    }
+    
+    public func getPassword() -> String {
+        return self.passwordTextField.text ?? ""
+    }
+    
     public func configTextFieldDelegate(delegate: UITextFieldDelegate){
         self.emailTextField.delegate = delegate
         self.passwordTextField.delegate = delegate
@@ -121,8 +150,7 @@ class RegisterScreen: UIView {
         self.imageAddUser.snp.makeConstraints { make in
             make.top.equalTo(self.safeAreaLayoutGuide.snp.top).offset(20)
             make.centerX.equalToSuperview()
-            make.width.equalTo(150)
-            make.height.equalTo(150)
+            make.width.height.equalTo(150)
         }
     }
 
