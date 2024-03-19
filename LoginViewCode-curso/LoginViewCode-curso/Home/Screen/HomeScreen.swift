@@ -10,6 +10,9 @@ import SnapKit
 
 class HomeScreen: UIView {
     
+//    weak var delegate: UITableViewDelegate?
+//    weak var dataSource: UITableViewDataSource?
+    
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -21,6 +24,11 @@ class HomeScreen: UIView {
         super.init(frame: frame)
         self.configSuperView()
         self.configTableViewConstraint()
+    }
+    
+    public func configTableViewProtocols(delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
+        self.tableView.delegate = delegate
+        self.tableView.dataSource = dataSource
     }
     
     func configSuperView(){
