@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		799C28E9FB82E137CD886AE3 /* Pods_LoginViewCode_curso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 348D3822633D1085B6514EEC /* Pods_LoginViewCode_curso.framework */; };
+		CA2F2DC12BAB0AC900DB8ABA /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2F2DC02BAB0AC900DB8ABA /* UserDetailTableViewCell.swift */; };
+		CA2F2DC42BAB0FC300DB8ABA /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2F2DC32BAB0FC300DB8ABA /* DataUser.swift */; };
+		CA2F2DC72BAB256E00DB8ABA /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2F2DC62BAB256E00DB8ABA /* UserDetailView.swift */; };
 		CA52B7432BA4C94800204BF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA52B7422BA4C94800204BF2 /* GoogleService-Info.plist */; };
 		CA52B7462BA4CA4500204BF2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CA52B7452BA4CA4500204BF2 /* FirebaseAnalytics */; };
 		CA52B7482BA4CA4500204BF2 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = CA52B7472BA4CA4500204BF2 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -53,6 +56,9 @@
 		1653E1787FDB3F7D15A51196 /* Pods-LoginViewCode-curso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewCode-curso.release.xcconfig"; path = "Target Support Files/Pods-LoginViewCode-curso/Pods-LoginViewCode-curso.release.xcconfig"; sourceTree = "<group>"; };
 		348D3822633D1085B6514EEC /* Pods_LoginViewCode_curso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginViewCode_curso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54DCEA528965939844452C9 /* Pods-LoginViewCode-curso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewCode-curso.debug.xcconfig"; path = "Target Support Files/Pods-LoginViewCode-curso/Pods-LoginViewCode-curso.debug.xcconfig"; sourceTree = "<group>"; };
+		CA2F2DC02BAB0AC900DB8ABA /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
+		CA2F2DC32BAB0FC300DB8ABA /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
+		CA2F2DC62BAB256E00DB8ABA /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		CA52B7422BA4C94800204BF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CA5B969C2B98D036005B5983 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		CA7252162B974FB8001ADCCE /* LoginViewCode-curso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoginViewCode-curso.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +121,31 @@
 				1653E1787FDB3F7D15A51196 /* Pods-LoginViewCode-curso.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA2F2DBF2BAB0AA300DB8ABA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CA2F2DC52BAB255000DB8ABA /* CustomView */,
+				CA2F2DC02BAB0AC900DB8ABA /* UserDetailTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CA2F2DC22BAB0FB700DB8ABA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA2F2DC32BAB0FC300DB8ABA /* DataUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA2F2DC52BAB255000DB8ABA /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				CA2F2DC62BAB256E00DB8ABA /* UserDetailView.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		CA5B96992B98CF1C005B5983 /* Login */ = {
@@ -213,6 +244,8 @@
 		CAF098582BA9CD69009D676E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CA2F2DC22BAB0FB700DB8ABA /* Model */,
+				CA2F2DBF2BAB0AA300DB8ABA /* Cell */,
 				CAF0985A2BA9CD99009D676E /* Screen */,
 				CAF098592BA9CD8B009D676E /* ViewController */,
 			);
@@ -394,7 +427,10 @@
 				CA72521E2B974FB8001ADCCE /* LoginViewController.swift in Sources */,
 				CAA968602B9F2EE50086479E /* RegisterViewController.swift in Sources */,
 				CAF0985C2BA9CDBC009D676E /* HomeViewController.swift in Sources */,
+				CA2F2DC72BAB256E00DB8ABA /* UserDetailView.swift in Sources */,
+				CA2F2DC42BAB0FC300DB8ABA /* DataUser.swift in Sources */,
 				CA5B969D2B98D036005B5983 /* LoginScreen.swift in Sources */,
+				CA2F2DC12BAB0AC900DB8ABA /* UserDetailTableViewCell.swift in Sources */,
 				CAF0985E2BA9CF06009D676E /* HomeScreen.swift in Sources */,
 				CA72521A2B974FB8001ADCCE /* AppDelegate.swift in Sources */,
 				CA72521C2B974FB8001ADCCE /* SceneDelegate.swift in Sources */,

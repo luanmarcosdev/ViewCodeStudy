@@ -17,12 +17,15 @@ class HomeScreen: UIView {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .white
+        //para registrar a celula
+        tableView.register(UserDetailTableViewCell.self, forCellReuseIdentifier: UserDetailTableViewCell.identifier)
         return tableView
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.configSuperView()
+        self.configBackground()
         self.configTableViewConstraint()
     }
     
@@ -33,6 +36,10 @@ class HomeScreen: UIView {
     
     func configSuperView(){
         self.addSubview(self.tableView)
+    }
+    
+    private func configBackground() {
+        self.backgroundColor = UIColor(red: 24/255, green: 117/255, blue: 104/255, alpha: 1.0)
     }
     
     required init?(coder: NSCoder) {
