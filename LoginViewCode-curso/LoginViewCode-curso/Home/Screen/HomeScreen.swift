@@ -17,8 +17,8 @@ class HomeScreen: UIView {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .white
-        //para registrar a celula
         tableView.register(UserDetailTableViewCell.self, forCellReuseIdentifier: UserDetailTableViewCell.identifier)
+        tableView.register(SportTableViewCell.self, forCellReuseIdentifier: SportTableViewCell.identifier)
         return tableView
     }()
 

@@ -47,6 +47,8 @@
 		CA7252262B974FBA001ADCCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7252242B974FBA001ADCCE /* LaunchScreen.storyboard */; };
 		CAA968602B9F2EE50086479E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA9685F2B9F2EE50086479E /* RegisterViewController.swift */; };
 		CAA968622B9F2F1D0086479E /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA968612B9F2F1D0086479E /* RegisterScreen.swift */; };
+		CAB55CE22BAC609600678E99 /* SportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB55CE12BAC609600678E99 /* SportTableViewCell.swift */; };
+		CAB55CE52BAC633200678E99 /* SportTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB55CE42BAC633200678E99 /* SportTableViewCellScreen.swift */; };
 		CAF098572BA9BAD9009D676E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF098562BA9BAD9009D676E /* Alert.swift */; };
 		CAF0985C2BA9CDBC009D676E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0985B2BA9CDBC009D676E /* HomeViewController.swift */; };
 		CAF0985E2BA9CF06009D676E /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0985D2BA9CF06009D676E /* HomeScreen.swift */; };
@@ -70,6 +72,8 @@
 		CA7252272B974FBA001ADCCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAA9685F2B9F2EE50086479E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CAA968612B9F2F1D0086479E /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		CAB55CE12BAC609600678E99 /* SportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCell.swift; sourceTree = "<group>"; };
+		CAB55CE42BAC633200678E99 /* SportTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCellScreen.swift; sourceTree = "<group>"; };
 		CAF098562BA9BAD9009D676E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		CAF0985B2BA9CDBC009D676E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CAF0985D2BA9CF06009D676E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -126,8 +130,8 @@
 		CA2F2DBF2BAB0AA300DB8ABA /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				CA2F2DC52BAB255000DB8ABA /* CustomView */,
-				CA2F2DC02BAB0AC900DB8ABA /* UserDetailTableViewCell.swift */,
+				CAB55CE02BAC602F00678E99 /* SportTableViewCell */,
+				CAB55CDF2BAC5FA900678E99 /* UserDetailTableViewCell */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -231,6 +235,32 @@
 				CAA9685F2B9F2EE50086479E /* RegisterViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CAB55CDF2BAC5FA900678E99 /* UserDetailTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CA2F2DC52BAB255000DB8ABA /* CustomView */,
+				CA2F2DC02BAB0AC900DB8ABA /* UserDetailTableViewCell.swift */,
+			);
+			path = UserDetailTableViewCell;
+			sourceTree = "<group>";
+		};
+		CAB55CE02BAC602F00678E99 /* SportTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CAB55CE32BAC630F00678E99 /* Custom View */,
+				CAB55CE12BAC609600678E99 /* SportTableViewCell.swift */,
+			);
+			path = SportTableViewCell;
+			sourceTree = "<group>";
+		};
+		CAB55CE32BAC630F00678E99 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				CAB55CE42BAC633200678E99 /* SportTableViewCellScreen.swift */,
+			);
+			path = "Custom View";
 			sourceTree = "<group>";
 		};
 		CAF098552BA9BABF009D676E /* Alert */ = {
@@ -429,6 +459,8 @@
 				CAF0985C2BA9CDBC009D676E /* HomeViewController.swift in Sources */,
 				CA2F2DC72BAB256E00DB8ABA /* UserDetailView.swift in Sources */,
 				CA2F2DC42BAB0FC300DB8ABA /* DataUser.swift in Sources */,
+				CAB55CE52BAC633200678E99 /* SportTableViewCellScreen.swift in Sources */,
+				CAB55CE22BAC609600678E99 /* SportTableViewCell.swift in Sources */,
 				CA5B969D2B98D036005B5983 /* LoginScreen.swift in Sources */,
 				CA2F2DC12BAB0AC900DB8ABA /* UserDetailTableViewCell.swift in Sources */,
 				CAF0985E2BA9CF06009D676E /* HomeScreen.swift in Sources */,

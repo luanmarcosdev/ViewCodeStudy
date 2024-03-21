@@ -42,6 +42,4 @@ class UserDetailTableViewCell: UITableViewCell {
         self.userDetailView.nameLabel.text = data.name
         self.userDetailView.userImageView.image = UIImage(named: data.nameImage)
     }
-    
-
 }
