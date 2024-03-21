@@ -15,6 +15,7 @@ class SportTableViewCellScreen: UIView {
         cv.showsHorizontalScrollIndicator = false
         cv.backgroundColor = .red
         cv.delaysContentTouches = false
+        cv.register(SportCollectionViewCell.self, forCellWithReuseIdentifier: SportCollectionViewCell.identifier)
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()
         layout.scrollDirection = .horizontal
         cv.setCollectionViewLayout(layout, animated: false)
