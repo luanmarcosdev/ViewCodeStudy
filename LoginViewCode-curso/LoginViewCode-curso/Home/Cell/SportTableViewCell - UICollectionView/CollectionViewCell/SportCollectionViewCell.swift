@@ -14,6 +14,8 @@ class SportCollectionViewCell: UICollectionViewCell {
     lazy var collectionViewCell: SportCollectionViewCellScreen = {
         let collectionViewCell = SportCollectionViewCellScreen()
         collectionViewCell.translatesAutoresizingMaskIntoConstraints = false
+        collectionViewCell.layer.borderWidth = 6.0
+        collectionViewCell.layer.borderColor = UIColor.blue.cgColor
         return collectionViewCell
     }()
     
@@ -25,6 +27,11 @@ class SportCollectionViewCell: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    public func setUpCell(data: Sport){
+        self.collectionViewCell.sportName.text = data.name
+        self.collectionViewCell.imageView.image = UIImage(named: data.nameImage)
     }
     
     private func configSuperView(){

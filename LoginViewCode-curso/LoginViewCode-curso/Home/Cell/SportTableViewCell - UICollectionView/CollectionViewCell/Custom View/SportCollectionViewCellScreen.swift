@@ -9,17 +9,26 @@ import UIKit
 
 class SportCollectionViewCellScreen: UIView {
     
-    lazy var viewBackground: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .green
-        return view
+    lazy var imageView: UIImageView = {
+        let image = UIImageView()
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.contentMode = .scaleAspectFit
+        return image
+    }()
+    
+    lazy var sportName: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .center
+        label.textColor = .darkGray
+        return label
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.configSuperView()
-        self.configViewBackgroundConstraint()
+        self.configImageViewConstraint()
+        self.configSportNameConstraint()
     }
     
     required init?(coder: NSCoder) {
@@ -27,13 +36,25 @@ class SportCollectionViewCellScreen: UIView {
     }
     
     private func configSuperView(){
-        self.addSubview(viewBackground)
+        self.addSubview(imageView)
+        self.addSubview(sportName)
     }
     
-    private func configViewBackgroundConstraint() {
-        self.viewBackground.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+    private func configImageViewConstraint() {
+        self.imageView.snp.makeConstraints { make in
+            make.top.leading.equalToSuperview().offset(10)
+            make.trailing.equalToSuperview().inset(10)
+            make.bottom.equalTo(self.sportName.snp.top).inset(10)
         }
     }
+    
+    private func configSportNameConstraint() {
+        self.sportName.snp.makeConstraints { make in
+            make.leading.equalToSuperview().offset(10)
+            make.trailing.bottom.equalToSuperview().inset(10)
+            make.height.equalTo(20)
+        }
+    }
+    
 
 }
