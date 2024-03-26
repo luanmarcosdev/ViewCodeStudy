@@ -10,9 +10,6 @@ import SnapKit
 
 class HomeScreen: UIView {
     
-//    weak var delegate: UITableViewDelegate?
-//    weak var dataSource: UITableViewDataSource?
-    
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false

@@ -11,8 +11,8 @@ class HomeViewController: UIViewController {
 
     var homeScreen: HomeScreen?
     var dataUser: [DataUser] = [DataUser(name: "Luan", nameImage: "boy1"),
-                             DataUser(name: "Marcos", nameImage: "boy2"),
-                             DataUser(name: "Maysa", nameImage: "default")]
+                                 DataUser(name: "Marcos", nameImage: "boy2"),
+                                 DataUser(name: "Maysa", nameImage: "default")]
     
     var dataSport: [Sport] = [Sport(name: "Corrida", nameImage: SportType.run.rawValue),
                                Sport(name: "Natação", nameImage: SportType.swimming.rawValue),
@@ -22,8 +22,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.homeScreen?.configTableViewProtocols(delegate: self, dataSource: self)
-//        homeScreen?.delegate = self
-//        homeScreen?.dataSource = self
     }
     
     override func loadView() {
