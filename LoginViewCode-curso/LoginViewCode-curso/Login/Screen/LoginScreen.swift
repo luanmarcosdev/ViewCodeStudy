@@ -33,7 +33,7 @@ class LoginScreen: UIView {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.image = UIImage(named: "logo")
-        image.tintColor = .green
+        image.tintColor = .white
         image.contentMode = .scaleAspectFit
         return image
     }()

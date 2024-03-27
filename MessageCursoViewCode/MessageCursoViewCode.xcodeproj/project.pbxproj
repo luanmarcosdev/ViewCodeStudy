@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		C07DAB0E85C58484170DA611 /* Pods_MessageCursoViewCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BE10B21882CB29C18546DC /* Pods_MessageCursoViewCode.framework */; };
 		CA14BCA62BB3012900299BE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA14BCA52BB3012800299BE8 /* GoogleService-Info.plist */; };
+		CA49118C2BB478DE006C4A83 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA49118B2BB478DE006C4A83 /* Extension+UIView.swift */; };
+		CA49118E2BB4797F006C4A83 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA49118D2BB4797F006C4A83 /* Custom.swift */; };
+		CA4911902BB47AFD006C4A83 /* Extension+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA49118F2BB47AFD006C4A83 /* Extension+Button.swift */; };
+		CA4911922BB47BED006C4A83 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4911912BB47BED006C4A83 /* Extension+String.swift */; };
+		CA4911972BB47DBB006C4A83 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA4911942BB47DBB006C4A83 /* Poppins-Bold.ttf */; };
+		CA4911982BB47DBB006C4A83 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA4911952BB47DBB006C4A83 /* Poppins-Medium.ttf */; };
+		CA4911992BB47DBB006C4A83 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA4911962BB47DBB006C4A83 /* Poppins-SemiBold.ttf */; };
+		CA49119D2BB4894C006C4A83 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA49119C2BB4894C006C4A83 /* HomeViewController.swift */; };
+		CA4911A02BB48C89006C4A83 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA49119F2BB48C89006C4A83 /* HomeScreen.swift */; };
+		CA4911A32BB48D2F006C4A83 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4911A22BB48D2F006C4A83 /* NavView.swift */; };
 		CAE284C82BB2F09400A5D57C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE284C72BB2F09400A5D57C /* AppDelegate.swift */; };
 		CAE284CA2BB2F09400A5D57C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE284C92BB2F09400A5D57C /* SceneDelegate.swift */; };
 		CAE284D12BB2F09500A5D57C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE284D02BB2F09500A5D57C /* Assets.xcassets */; };
@@ -24,6 +34,16 @@
 		31B39C58E7EB2B183334113C /* Pods-MessageCursoViewCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageCursoViewCode.release.xcconfig"; path = "Target Support Files/Pods-MessageCursoViewCode/Pods-MessageCursoViewCode.release.xcconfig"; sourceTree = "<group>"; };
 		99BE10B21882CB29C18546DC /* Pods_MessageCursoViewCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageCursoViewCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA14BCA52BB3012800299BE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CA49118B2BB478DE006C4A83 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		CA49118D2BB4797F006C4A83 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
+		CA49118F2BB47AFD006C4A83 /* Extension+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Button.swift"; sourceTree = "<group>"; };
+		CA4911912BB47BED006C4A83 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		CA4911942BB47DBB006C4A83 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		CA4911952BB47DBB006C4A83 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		CA4911962BB47DBB006C4A83 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		CA49119C2BB4894C006C4A83 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CA49119F2BB48C89006C4A83 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		CA4911A22BB48D2F006C4A83 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 		CAE284C42BB2F09400A5D57C /* MessageCursoViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageCursoViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE284C72BB2F09400A5D57C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAE284C92BB2F09400A5D57C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +87,62 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CA49118A2BB478C4006C4A83 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CA49118B2BB478DE006C4A83 /* Extension+UIView.swift */,
+				CA49118D2BB4797F006C4A83 /* Custom.swift */,
+				CA49118F2BB47AFD006C4A83 /* Extension+Button.swift */,
+				CA4911912BB47BED006C4A83 /* Extension+String.swift */,
+				CA4911932BB47CF1006C4A83 /* Fonts */,
+				CA49119A2BB47E82006C4A83 /* Sound */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CA4911932BB47CF1006C4A83 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CA4911942BB47DBB006C4A83 /* Poppins-Bold.ttf */,
+				CA4911952BB47DBB006C4A83 /* Poppins-Medium.ttf */,
+				CA4911962BB47DBB006C4A83 /* Poppins-SemiBold.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		CA49119A2BB47E82006C4A83 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		CA49119B2BB48924006C4A83 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CA4911A12BB48D0D006C4A83 /* NavView */,
+				CA49119E2BB48C67006C4A83 /* Screen */,
+				CA49119C2BB4894C006C4A83 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CA49119E2BB48C67006C4A83 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CA49119F2BB48C89006C4A83 /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		CA4911A12BB48D0D006C4A83 /* NavView */ = {
+			isa = PBXGroup;
+			children = (
+				CA4911A22BB48D2F006C4A83 /* NavView.swift */,
+			);
+			path = NavView;
+			sourceTree = "<group>";
+		};
 		CAE284BB2BB2F09400A5D57C = {
 			isa = PBXGroup;
 			children = (
@@ -88,9 +164,11 @@
 		CAE284C62BB2F09400A5D57C /* MessageCursoViewCode */ = {
 			isa = PBXGroup;
 			children = (
-				CAE284DB2BB2F0D300A5D57C /* Login */,
-				CAE284E02BB2F0D300A5D57C /* Register */,
+				CA49118A2BB478C4006C4A83 /* Utils */,
 				CAE284E82BB2F23500A5D57C /* Alert */,
+				CAE284DB2BB2F0D300A5D57C /* Login */,
+				CA49119B2BB48924006C4A83 /* Home */,
+				CAE284E02BB2F0D300A5D57C /* Register */,
 				CAE284C72BB2F09400A5D57C /* AppDelegate.swift */,
 				CAE284C92BB2F09400A5D57C /* SceneDelegate.swift */,
 				CAE284D02BB2F09500A5D57C /* Assets.xcassets */,
@@ -217,6 +295,9 @@
 				CAE284D42BB2F09500A5D57C /* LaunchScreen.storyboard in Resources */,
 				CAE284D12BB2F09500A5D57C /* Assets.xcassets in Resources */,
 				CA14BCA62BB3012900299BE8 /* GoogleService-Info.plist in Resources */,
+				CA4911992BB47DBB006C4A83 /* Poppins-SemiBold.ttf in Resources */,
+				CA4911972BB47DBB006C4A83 /* Poppins-Bold.ttf in Resources */,
+				CA4911982BB47DBB006C4A83 /* Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,11 +352,18 @@
 			files = (
 				CAE284E62BB2F0D300A5D57C /* RegisterScreen.swift in Sources */,
 				CAE284E72BB2F0D300A5D57C /* RegisterViewController.swift in Sources */,
+				CA49118C2BB478DE006C4A83 /* Extension+UIView.swift in Sources */,
 				CAE284E42BB2F0D300A5D57C /* LoginScreen.swift in Sources */,
 				CAE284C82BB2F09400A5D57C /* AppDelegate.swift in Sources */,
+				CA49118E2BB4797F006C4A83 /* Custom.swift in Sources */,
+				CA4911A32BB48D2F006C4A83 /* NavView.swift in Sources */,
+				CA4911A02BB48C89006C4A83 /* HomeScreen.swift in Sources */,
 				CAE284E52BB2F0D300A5D57C /* LoginViewController.swift in Sources */,
+				CA4911922BB47BED006C4A83 /* Extension+String.swift in Sources */,
 				CAE284CA2BB2F09400A5D57C /* SceneDelegate.swift in Sources */,
 				CAE284EA2BB2F23500A5D57C /* Alert.swift in Sources */,
+				CA4911902BB47AFD006C4A83 /* Extension+Button.swift in Sources */,
+				CA49119D2BB4894C006C4A83 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
