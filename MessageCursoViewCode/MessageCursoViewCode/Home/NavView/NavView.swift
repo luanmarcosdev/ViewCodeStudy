@@ -82,7 +82,7 @@ class NavView: UIView {
         let bt = UIButton()
         bt.translatesAutoresizingMaskIntoConstraints = false
         bt.setImage(UIImage(named: "chat2")?.withRenderingMode(.alwaysTemplate), for: .normal)
-        bt.tintColor = .black
+        bt.tintColor = .systemPink
         bt.addTarget(self, action: #selector(self.tappedConversationButton), for: .touchUpInside)
         return bt
     }()
