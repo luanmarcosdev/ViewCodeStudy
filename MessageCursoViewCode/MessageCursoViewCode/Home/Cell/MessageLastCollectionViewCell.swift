@@ -22,6 +22,7 @@ class MessageLastCollectionViewCell: UICollectionViewCell {
     
     lazy var userName: UILabel = {
         var label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Adicionar novo Contato"
         label.font = UIFont(name: CustomFont.poppingMedium, size: 16)
         label.textColor = .darkGray
