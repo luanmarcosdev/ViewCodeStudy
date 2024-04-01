@@ -20,6 +20,7 @@
 		CA4911A02BB48C89006C4A83 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA49119F2BB48C89006C4A83 /* HomeScreen.swift */; };
 		CA4911A32BB48D2F006C4A83 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4911A22BB48D2F006C4A83 /* NavView.swift */; };
 		CA9E3A252BBAD66E00F049C0 /* MessageAllModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9E3A242BBAD66E00F049C0 /* MessageAllModel.swift */; };
+		CA9E3A282BBADB7B00F049C0 /* MessageLastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9E3A272BBADB7B00F049C0 /* MessageLastCollectionViewCell.swift */; };
 		CAE284C82BB2F09400A5D57C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE284C72BB2F09400A5D57C /* AppDelegate.swift */; };
 		CAE284CA2BB2F09400A5D57C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE284C92BB2F09400A5D57C /* SceneDelegate.swift */; };
 		CAE284D12BB2F09500A5D57C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE284D02BB2F09500A5D57C /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		CA49119F2BB48C89006C4A83 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		CA4911A22BB48D2F006C4A83 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 		CA9E3A242BBAD66E00F049C0 /* MessageAllModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAllModel.swift; sourceTree = "<group>"; };
+		CA9E3A272BBADB7B00F049C0 /* MessageLastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLastCollectionViewCell.swift; sourceTree = "<group>"; };
 		CAE284C42BB2F09400A5D57C /* MessageCursoViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageCursoViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE284C72BB2F09400A5D57C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAE284C92BB2F09400A5D57C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		CA49119B2BB48924006C4A83 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CA9E3A262BBADB4E00F049C0 /* Cell */,
 				CA4911A12BB48D0D006C4A83 /* NavView */,
 				CA49119E2BB48C67006C4A83 /* Screen */,
 				CA49119C2BB4894C006C4A83 /* HomeViewController.swift */,
@@ -151,6 +154,14 @@
 				CA9E3A242BBAD66E00F049C0 /* MessageAllModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CA9E3A262BBADB4E00F049C0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CA9E3A272BBADB7B00F049C0 /* MessageLastCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		CAE284BB2BB2F09400A5D57C = {
@@ -375,6 +386,7 @@
 				CAE284CA2BB2F09400A5D57C /* SceneDelegate.swift in Sources */,
 				CAE284EA2BB2F23500A5D57C /* Alert.swift in Sources */,
 				CA4911902BB47AFD006C4A83 /* Extension+Button.swift in Sources */,
+				CA9E3A282BBADB7B00F049C0 /* MessageLastCollectionViewCell.swift in Sources */,
 				CA49119D2BB4894C006C4A83 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
