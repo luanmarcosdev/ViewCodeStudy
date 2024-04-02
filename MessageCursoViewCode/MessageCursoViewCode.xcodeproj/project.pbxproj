@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C07DAB0E85C58484170DA611 /* Pods_MessageCursoViewCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BE10B21882CB29C18546DC /* Pods_MessageCursoViewCode.framework */; };
+		CA0B0EC92BBC38C400584ABD /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B0EC82BBC38C400584ABD /* ChatViewController.swift */; };
+		CA0B0ECC2BBC391700584ABD /* ChatViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B0ECB2BBC391700584ABD /* ChatViewScreen.swift */; };
+		CA0B0ECF2BBC39CA00584ABD /* ChatNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0B0ECE2BBC39CA00584ABD /* ChatNavigationView.swift */; };
 		CA14BCA62BB3012900299BE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA14BCA52BB3012800299BE8 /* GoogleService-Info.plist */; };
 		CA49118C2BB478DE006C4A83 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA49118B2BB478DE006C4A83 /* Extension+UIView.swift */; };
 		CA49118E2BB4797F006C4A83 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA49118D2BB4797F006C4A83 /* Custom.swift */; };
@@ -37,6 +40,9 @@
 /* Begin PBXFileReference section */
 		31B39C58E7EB2B183334113C /* Pods-MessageCursoViewCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageCursoViewCode.release.xcconfig"; path = "Target Support Files/Pods-MessageCursoViewCode/Pods-MessageCursoViewCode.release.xcconfig"; sourceTree = "<group>"; };
 		99BE10B21882CB29C18546DC /* Pods_MessageCursoViewCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageCursoViewCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA0B0EC82BBC38C400584ABD /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		CA0B0ECB2BBC391700584ABD /* ChatViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewScreen.swift; sourceTree = "<group>"; };
+		CA0B0ECE2BBC39CA00584ABD /* ChatNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatNavigationView.swift; sourceTree = "<group>"; };
 		CA14BCA52BB3012800299BE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CA49118B2BB478DE006C4A83 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		CA49118D2BB4797F006C4A83 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
@@ -93,6 +99,32 @@
 				31B39C58E7EB2B183334113C /* Pods-MessageCursoViewCode.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA0B0EC72BBC389400584ABD /* ChatViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA0B0ECD2BBC399A00584ABD /* ChatNavigationView */,
+				CA0B0ECA2BBC38F300584ABD /* Screen */,
+				CA0B0EC82BBC38C400584ABD /* ChatViewController.swift */,
+			);
+			path = ChatViewController;
+			sourceTree = "<group>";
+		};
+		CA0B0ECA2BBC38F300584ABD /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CA0B0ECB2BBC391700584ABD /* ChatViewScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		CA0B0ECD2BBC399A00584ABD /* ChatNavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				CA0B0ECE2BBC39CA00584ABD /* ChatNavigationView.swift */,
+			);
+			path = ChatNavigationView;
 			sourceTree = "<group>";
 		};
 		CA49118A2BB478C4006C4A83 /* Utils */ = {
@@ -204,6 +236,7 @@
 				CAE284E82BB2F23500A5D57C /* Alert */,
 				CAE284DB2BB2F0D300A5D57C /* Login */,
 				CA49119B2BB48924006C4A83 /* Home */,
+				CA0B0EC72BBC389400584ABD /* ChatViewController */,
 				CAE284E02BB2F0D300A5D57C /* Register */,
 				CAE284C72BB2F09400A5D57C /* AppDelegate.swift */,
 				CAE284C92BB2F09400A5D57C /* SceneDelegate.swift */,
@@ -391,18 +424,21 @@
 				CA49118C2BB478DE006C4A83 /* Extension+UIView.swift in Sources */,
 				CAE284E42BB2F0D300A5D57C /* LoginScreen.swift in Sources */,
 				CAE284C82BB2F09400A5D57C /* AppDelegate.swift in Sources */,
+				CA0B0ECF2BBC39CA00584ABD /* ChatNavigationView.swift in Sources */,
 				CA9E3A252BBAD66E00F049C0 /* MessageAllModel.swift in Sources */,
 				CA49118E2BB4797F006C4A83 /* Custom.swift in Sources */,
 				CA4911A32BB48D2F006C4A83 /* NavView.swift in Sources */,
 				CA9E3A2D2BBB316F00F049C0 /* ContactController.swift in Sources */,
 				CA4911A02BB48C89006C4A83 /* HomeScreen.swift in Sources */,
 				CAE284E52BB2F0D300A5D57C /* LoginViewController.swift in Sources */,
+				CA0B0EC92BBC38C400584ABD /* ChatViewController.swift in Sources */,
 				CA4911922BB47BED006C4A83 /* Extension+String.swift in Sources */,
 				CAE284CA2BB2F09400A5D57C /* SceneDelegate.swift in Sources */,
 				CAE284EA2BB2F23500A5D57C /* Alert.swift in Sources */,
 				CA4911902BB47AFD006C4A83 /* Extension+Button.swift in Sources */,
 				CA9E3A282BBADB7B00F049C0 /* MessageLastCollectionViewCell.swift in Sources */,
 				CA49119D2BB4894C006C4A83 /* HomeViewController.swift in Sources */,
+				CA0B0ECC2BBC391700584ABD /* ChatViewScreen.swift in Sources */,
 				CA9E3A2A2BBAE9BC00F049C0 /* MessageDetailCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

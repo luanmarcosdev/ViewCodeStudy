@@ -118,6 +118,7 @@ extension HomeViewController: NavViewProtocol {
         case .contact:
             self.screenContact = true
             self.getContact()
+            self.conversasListener?.remove()
         case .conversation:
             self.screenContact = false
             self.addListenerRecuperarConversa()
@@ -129,15 +130,48 @@ extension HomeViewController: NavViewProtocol {
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        
+        if self.screenContact ?? false {
+            return self.listContact.count + 1
+        }else {
+            return self.listConversation.count
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        
+        if self.screenContact ?? false {
+            if indexPath.row == self.listContact.count {
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MessageLastCollectionViewCell.identifier, for: indexPath)
+                return cell
+            } else {
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MessageDetailCollectionViewCell.identifier, for: indexPath) as? MessageDetailCollectionViewCell
+                cell?.setUpViewContact(contact: self.listContact[indexPath.row])
+                return cell ?? UICollectionViewCell()
+            }
+            
+        }else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MessageDetailCollectionViewCell.identifier, for: indexPath) as? MessageDetailCollectionViewCell
+            cell?.setUpViewConversation(conversation: self.listConversation[indexPath.row])
+            return cell ?? UICollectionViewCell()
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath)
+       
+        if self.screenContact ?? false {
+//            if indexPath.row == self.listContact.count {
+//                self.alert?.addContact(completion: { value in
+//                    self.contact?.addContact(email: value, emailUsuarioLogado: self.emailUserOn ?? "" , idUsuario: self.idUserOn ?? "")
+//                })
+//            }else {
+//                // TO DO
+//            }
+        }else {
+            //to do
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
