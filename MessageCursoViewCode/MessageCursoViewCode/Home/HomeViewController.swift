@@ -170,7 +170,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 //                // TO DO
 //            }
         }else {
-            //to do
+            let vc: ChatViewController = ChatViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     

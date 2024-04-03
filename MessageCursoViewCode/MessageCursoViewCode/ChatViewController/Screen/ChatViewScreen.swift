@@ -95,16 +95,8 @@ class ChatViewScreen: UIView {
         NotificationCenter.default.addObserver(self, selector: #selector(self.handleKeyboardNotification(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.handleKeyboardNotification(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         
-        // ========
         
-        //metodo para efeito de animar botao de enviar
-        
-        self.inputMessageTextField.addTarget(self, action: <#T##Selector#>, for: UIControl.Event.editingChanged)
-        
-        //=====
-        
-        //constraint
-        
+        self.inputMessageTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
         self.bottomConstraint = NSLayoutConstraint(item: self.messageInputView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: 0)
         
         self.addConstraint(bottomConstraint ?? NSLayoutConstraint())
@@ -208,6 +200,26 @@ class ChatViewScreen: UIView {
         
 }
 
-extension ChatViewScreen: UITextFieldDelegate {
-    //implementar animacao do botao
+extension ChatViewScreen:UITextFieldDelegate{
+    
+    @objc 
+    func textFieldDidChange(_ textField: UITextField) {
+        if self.inputMessageTextField.text == ""{
+            UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+                self.sendButton.isEnabled = false
+                self.sendButton.layer.opacity = 0.4
+                self.sendButton.transform = .init(scaleX: 0.8, y: 0.8)
+        }, completion: { _ in
+        })
+    } else {
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+            self.sendButton.isEnabled = true
+            self.sendButton.layer.opacity = 1
+            self.sendButton.transform = .identity
+        }, completion: { _ in
+        })
+    }
 }
+    
+}
+
